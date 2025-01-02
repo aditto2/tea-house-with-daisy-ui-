@@ -5,17 +5,148 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tea House</title>
+    <!-- font-awesome -->
+    <script src="https://kit.fontawesome.com/f668b39ff0.js" crossorigin="anonymous"></script>
+    <!-- google-font-manrope -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Manrope:wght@200..800&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Mulish:ital,wght@0,200..1000;1,200..1000&family=Open+Sans&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <!-- tailwind-and-daisy-ui -->
     <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.23/dist/full.min.css" rel="stylesheet" type="text/css" />
     <script src="https://cdn.tailwindcss.com"></script>
+    <!-- tailwind-custom-color -->
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        clifford: '#da373d',
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        .font-manrope {
+            font-family: "Inter", serif;
+            font-optical-sizing: auto;
+        }
+    </style>
 </head>
 
-<body>
-    <header>
-
+<body class="font-manrope">
+    <header class="mx-auto container ">
+        <div class="hero">
+            <div class="hero-content flex-col lg:flex-row ">
+                <div>
+                    <h1 class="lg:text-7xl text-4xl font-extrabold">It's good <br>
+                        tea time at The <br> Tea House</h1>
+                    <p class="py-6 font-medium text-lg text-[#777777]">
+                        Tea and Botanical Solutions Supplier Give Optimum Satisfaction To Your Taste Buds.
+                    </p>
+                    <button
+                        class="btn btn-primary bg-gradient-to-r from-[#FF0000] to-[#FF8938] text-white border-0">Explore
+                        More</button>
+                </div>
+                <div>
+                    <img src="images/banner.png" class="lg:max-w-sm" />
+                    <!-- ratings-bag -->
+                    <div class="-mt-20 flex items-center gap-3 drop-shadow-lg bg-white p-3 w-56">
+                        <div><i class="fa-solid fa-star text-4xl text-amber-400"></i></div>
+                        <div>
+                            <h3 class="text-3xl font-extrabold text-[#1C1C1C]">5.00</h3>
+                            <p class="text-[#777777] font-semibold text-base">Trust Pilot Ratings</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </header>
 
-    <main>
-
+    <main class="container mx-auto">
+        <!-- features-section -->
+        <section class="text-center my-24 m-5">
+            <h2 class="font-extrabold text-5xl mb-5">Our Featured Products</h2>
+            <p class="text-[#777777] font-medium lg:max-w-3xl mx-auto  mb-10">There are many variations of passages of
+                Lorem
+                Ipsum available, but the majority have suffered alteration in some form, by injected humour, or
+                randomised words which don't look even slightly believable. </p>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 lg:mx-10 gap-6 ">
+                <!-- first-card -->
+                <div class="card  bg-gradient-to-r from-[#F4F4F4] to-[#F4F4F4]  shadow-xl">
+                    <figure class="px-10 pt-10">
+                        <img src="images/tea-1.png" alt="Shoes" class="rounded-xl" />
+                    </figure>
+                    <div class="card-body items-center text-center">
+                        <h2 class="card-title">Milk Tea</h2>
+                        <p class="text-[#777777]">Creamer could be replaced by fresh milk</p>
+                    </div>
+                </div>
+                <!-- second-card -->
+                <div class="card bg-gradient-to-r from-[#F4F4F4] to-[#F4F4F4]  shadow-xl">
+                    <figure class="px-10 pt-10">
+                        <img src="images/tea-2.png" alt="Shoes" class="rounded-xl" />
+                    </figure>
+                    <div class="card-body items-center text-center">
+                        <h2 class="card-title">Black Tea</h2>
+                        <p class="text-[#777777]">Creamer could be replaced by fresh milk</p>
+                    </div>
+                </div>
+                <!-- third-card -->
+                <div class="card bg-gradient-to-r from-[#F4F4F4] to-[#F4F4F4]  shadow-xl">
+                    <figure class="px-10 pt-10">
+                        <img src="images/tea-3.png" alt="Shoes" class="rounded-xl" />
+                    </figure>
+                    <div class="card-body items-center text-center">
+                        <h2 class="card-title">Lemon Tea</h2>
+                        <p class="text-[#777777]">Creamer could be replaced by fresh milk</p>
+                    </div>
+                </div>
+                <!-- fourth-card -->
+                <div class="card bg-gradient-to-r from-[#F4F4F4] to-[#F4F4F4]  shadow-xl">
+                    <figure class="px-10 pt-10">
+                        <img src="images/tea-4.png" alt="Shoes" class="rounded-xl" />
+                    </figure>
+                    <div class="card-body items-center text-center">
+                        <h2 class="card-title">Green Tea</h2>
+                        <p class="text-[#777777]">Creamer could be replaced by fresh milk</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- great-tea-fresh-tea-section -->
+        <section class="my-24 flex flex-col lg:flex-row gap-14 mx-8">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 flex-1">
+                <div class="rounded-xl bg-gradient-to-r from-[#FF0000] to-[#FF8938] w-[238px] h-[136px]"></div>
+                <div class="row-span-2 bg-[#E6A623] p-12 rounded-xl w-[238px]">
+                    <img src="images/fresh-1.png" alt="">
+                </div>
+                <div class="row-span-2 bg-[#577639] p-12 rounded-xl w-[238px]">
+                    <img src="images/fresh-2.png" alt="">
+                </div>
+                <div class="rounded-xl bg-gradient-to-r from-[#D9D9D9] to-[#FFFFFF] w-[238px] h-[136px]"></div>
+            </div>
+            <div class="space-y-5 flex-1">
+                <h3 class="text-3xl font-extrabold">Great Tea, Freshly <br>
+                    Presented</h3>
+                <p class="text-[#777777] font-medium text-base">
+                    The meaning of gong cha is chanese is to provide the best tea to emperor from
+                    all possessions . It
+                    represents the highest quality and self expectation. Establishing in 2006, Gong cha had been deeply
+                    appreciated by its custoers because of good words of mouth and unique customized service orginated
+                    from Taiwan.
+                </p>
+                <h4 class="text-xl font-extrabold mt-8">Unique Taste</h4>
+                <p class="text-[#777777] font-medium text-base">A Unique and different style from other teapots gives a
+                    luxurious and
+                    minimalist impression</p>
+                <h4 class="text-xl font-extrabold">Premium Quality</h4>
+                <p class="text-[#777777] font-medium text-base">Premium Quality that makes tea more elegant and more
+                    durable when you use it.</p>
+            </div>
+        </section>
     </main>
 
     <footer>
